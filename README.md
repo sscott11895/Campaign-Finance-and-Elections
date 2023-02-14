@@ -15,7 +15,7 @@ I used One-hot Encoder on my categorical variables (candidate status as a challe
 
 The mean accuracy on the test data and labels was 94.3%. The top features that the model focused on in order to make predictions were other committee contributions (83%), which would include the amount of money received from PACs and Super PACs, as well as if the the candidate was an incumbent or not (10%). In looking at the 19 occurrences where the model made incorrect predictions on the test data, we see that the model mostly guessed that these people had won when they really lost their election. Most of these observations had really large values for "other committee contributions", or super PAC contributions, which makes me think the model may be overemphasizing the importance of super PAC contributions. 
 
-## **Decision Tree Forest**
+## **Random Forest Classifier**
 I prepped the data in the same way as when I ran the Decision Tree Classifier. The mean accuracy on the test data and labels was 0.9578, or 95.8% accurate. The top features that the model focused on in order to make predictions were other committee contributions (18.5%), which would include the amount of money received from PACs and Super PACs, whether candidate was an incumbent or not (12%), total contributions to the campaign (11%), and how much the candidate contributed to his/her campaign as a fraction of total contributions (10%).
 
 In looking at the 14 occurrences where the model made incorrect predictions on the test data, I saw that the model mostly guessed that these candidates had won when they really lost their election. This shows that placing a more even importance on certain features leads to slightly better predictions in this situation.
